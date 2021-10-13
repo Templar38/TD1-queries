@@ -1,0 +1,124 @@
+/**
+queries TD1
+*
+Mis a jour le : 01/09/2021
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #AAF0D1;/** Crayola */
+    color:#FFF;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+    padding:1em;
+    height:2vh;
+    background-color: lightyellow;
+    color:black;
+    border: 1px solid black;
+}
+
+main{
+
+}
+
+article{
+    padding:0;
+    margin:0;
+    height: 25vh;
+    border:4px solid gray;
+}
+
+article:nth-of-type(1n){
+    background-color:lightskyblue;
+
+}
+
+article:nth-of-type(2n){
+    background-color:lightgrey;
+
+}
+
+footer{
+    padding: 0em;
+    color: black;
+    border:3px solid black;
+}
+
+
+/** @media TABLETTE **/
+
+@media all and (min-width:300px) and (max-width:650px){
+    body{
+        background-color: #85754E;
+    }
+    article:nth-of-type(2n){
+        background-color:rgb(233, 31, 31);
+    
+    }
+}
+
+/** @media ORDI PORTABLE **/
+
+@media all and (min-width:650px){
+    body{
+        background-color: #FE6F5E;
+    }
+    article:nth-of-type(1n){
+        float: left;
+        width:50%;
+    
+    }
+    article:nth-of-type(2n){
+        float:right;
+        width:50%;
+    }
+}
+
+/** @media ORDI ECRAN LARGE **/
+
+@media all and (min-width:960px){
+    body{
+        background-color: #00CCCC;
+    }
+    article:nth-of-type(1n){
+        float: left;
+        background-color: blue;
+        width:33.3333%;
+    
+    }
+    
+    article:nth-of-type(2n){
+        float: left;
+        background-color: blueviolet;
+        width:33.3333%;
+    }
+    article:nth-of-type(3n){
+        float: right;
+        background-color: chartreuse;
+        width:33.3333%;
+    }
+    
+    section:nth-child(1){
+        float: left;
+        width: 60%;
+        border: 1px solid black;
+        background-color: teal;
+    }
+    section:nth-child(2){
+        float:right;
+        width: 40%;
+        border: 1px solid black;
+        background-color: red;
+    }
+}
